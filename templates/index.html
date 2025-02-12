@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <style>
+            .button-container {
+                width: 520px;
+                background: gray;
+                overflow-y: auto;
+            }
+
+            .button-container > a {
+                width: 100px;
+                height: 100px;
+                float: left;
+                background: lightgray;   
+                margin: 15px;
+            }
+            .chess-board { border-spacing: 0; border-collapse: collapse; }
+            .chess-board th { padding: .5em; }
+            .chess-board td { border: 1px solid; width: 2em; height: 2em; }
+            .chess-board .light { background: #eee; }
+            .chess-board .dark { background: #000; }
+            table {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    
+                    position: absolute;
+                    top:0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    
+                    margin: auto;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="menu-container">
+            <div class="button-container">
+               <a href="#/Action1" class="button">Action1</a>
+               <a href="#/Action2" class="button">Action2</a>
+               <a href="#/Action3" class="button">Action3</a>
+               <a href="#/Action4" class="button">Action4</a>
+               <a href="#/Action5" class="button">Action5</a>
+            </div>
+        </div>
+    </body>
+</html>

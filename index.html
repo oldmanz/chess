@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="username">Username: </h1>
+            <h2 id="game_id">Game Id: </h2>
+            <h3 id="your_pieces">Your Pieces: </h3>
+            <h3 id="turn">Turn: </h3>
+            <h3 id="last_move">Last Move: </h3>
+            <h3 id="your_move">Your Move: </h3>
+        </div>
+        <div class="menu-container">
+            <div class="button-container">
+               <a href="javascript:makeMove('1')" class="button">A/1</a>
+                <a href="javascript:makeMove('2')" class="button">B/2</a>
+                <a href="javascript:makeMove('3')" class="button">C/3</a>
+                <a href="javascript:makeMove('4')" class="button">D/4</a>
+                <a href="javascript:makeMove('5')" class="button">E/5</a>
+                <a href="javascript:makeMove('6')" class="button">F/6</a>
+                <a href="javascript:makeMove('7')" class="button">G/7</a>
+                <a href="javascript:makeMove('8')" class="button">H/8</a>              
+
+            </div>
+            <div>
+                <a href="javascript:clearMove()" class="button">Clear Move</a>
+                <a href="javascript:sendMove()" class="button">Send Move</a>
+        </div>
+
+
+    </body>
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+            <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</html>
