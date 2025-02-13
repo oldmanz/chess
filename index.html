@@ -7,46 +7,38 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="header">
-            <h1 id="username">Username: </h1>
-            <h2 id="game_id">Game Id: </h2>
-            <h3 id="your_pieces">Your Pieces: </h3>
-            <h3 id="turn">Turn: </h3>
-            <h3 id="last_move">Last Move: </h3>
-            <h3 id="your_move">Your Move: </h3>
-        </div>
-        <div class="menu-container">
-            <div class="button-container">
-               <a href="javascript:makeMove('1')" class="button">A/1</a>
-                <a href="javascript:makeMove('2')" class="button">B/2</a>
-                <a href="javascript:makeMove('3')" class="button">C/3</a>
-                <a href="javascript:makeMove('4')" class="button">D/4</a>
-                <a href="javascript:makeMove('5')" class="button">E/5</a>
-                <a href="javascript:makeMove('6')" class="button">F/6</a>
-                <a href="javascript:makeMove('7')" class="button">G/7</a>
-                <a href="javascript:makeMove('8')" class="button">H/8</a>              
+    <div class="grid-container">
+        
+        <div class="account" id="account" onclick='javascript:changeToken()'>
+            <h2 id="username">Set Token</h2>
+            
 
-            </div>
-            <div>
-                <a href="javascript:clearMove()" class="button">Clear Move</a>
-                <a href="javascript:sendMove()" class="button">Send Move</a>
         </div>
+        <div class="game" id="game" onclick='javascript:startGame()'>
+            <h3 id="game_id">Start Game</h3>
+            <h3 id="your_pieces"></h3>
 
+        </div>
+        <div class="last_move" id="last_move_div">
+            <h1 id="last_move"></h1>
+        </div>
+        <div class="your_move" id="your_move_div">
+            <h1 id="your_move"></h1>
+        </div>
+        
+        <div class="item1" onclick='javascript:makeMove("1")'><h1>A/1</h1></div>
+        <div class="item2" onclick='javascript:makeMove("2")'><h1>B/2</h1></div>
+        <div class="item3" onclick='javascript:makeMove("3")'><h1>C/3</h1></div>
+        <div class="item4" onclick='javascript:makeMove("4")'><h1>D/4</h1></div>
+        <div class="item5" onclick='javascript:makeMove("5")'><h1>E/5</h1></div>
+        <div class="item6" onclick='javascript:makeMove("6")'><h1>F/6</h1></div>
+        <div class="item7" onclick='javascript:makeMove("7")'><h1>G/7</h1></div>
+        <div class="item8" onclick='javascript:makeMove("8")'><h1>H/8</h1></div>
 
-    </body>
-    <div class="modal hide fade" id="myModal">
-        <div class="modal-header">
-            <a class="close" data-dismiss="modal">×</a>
-            <h3>Modal header</h3>
-        </div>
-        <div class="modal-body">
-            <p>One fine body…</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#" class="btn">Close</a>
-            <a href="#" class="btn btn-primary">Save changes</a>
-        </div>
-    </div>
+        <div class='quit' id="quit" onclick="javascript:quit()"><h1>Quit</h1></div>
+        <div class="clear" onclick='javascript:clearMove()'><h1>Clear</h1></div>
+        <div class="submit" onclick='javascript:sendMove()'><h1>Submit</h1></div>
+      </div>
 
     <script
         src="https://code.jquery.com/jquery-3.7.1.min.js"

@@ -1,13 +1,76 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+    }
+
+
+
 .button-container {
-    width: 520px;
+    width: 100vw;
     background: gray;
     overflow-y: auto;
+    text-align: center;
+  left: 0px;
+  right: 0px;
+  top: 0px;
 }
 
 .button-container > a {
-    width: 100px;
+    width: 20vw;
     height: 100px;
     float: left;
     background: lightgray;   
     margin: 15px;
 }
+
+.grid-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: grid;
+    grid-template-areas:
+      'header header game game'
+      'last_move last_move your_move your_move'
+      'area1 area2 area3 area4'
+      'area1 area2 area3 area4'
+      'area1 area2 area3 area4'
+      'area5 area6 area7 area8'
+      'area5 area6 area7 area8'
+      'area5 area6 area7 area8'
+      'quit clear submit submit';
+    grid-gap: 10px;
+    
+    background-color: #f9fad2;
+    padding: 10px;
+  
+  }
+  
+  .grid-container > div {
+    background-color: #D2E0FB;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  
+  .header { grid-area: header; }
+  .game { grid-area: game; }
+  .last_move { grid-area: last_move; display: none;}
+  .your_move { grid-area: your_move; display: none;}
+  .item1 { grid-area: area1; }
+  .item2 { grid-area: area2; }
+  .item3 { grid-area: area3; }
+  .item4 { grid-area: area4; }
+  .item5 { grid-area: area5; }
+  .item6 { grid-area: area6;  }
+  .item7 { grid-area: area7; }
+  .item8 { grid-area: area8;  }
+  .quit { grid-area: quit; }
+  .clear { grid-area: clear; }
+  .submit { grid-area: submit; }
